@@ -106,7 +106,7 @@ void itsnotme() {
   digitalWrite(NOK_PIN, HIGH);
   digitalWrite(OK_PIN, LOW);
   
-  int beats[] = { 1, 1, 1, 1, 1, 1, 1, 1 };
+  int beats[] = { 1, 1, 1, 1, 1, 1, 1, 3 };
   playMelody(8, "Cbagfedc", beats);
   
   delay(1000);
@@ -115,7 +115,7 @@ void itsnotme() {
 
 void playMelody(int length, char notes[], int beats[]) 
 {
-  int tempo = 130;
+  int tempo = 110;
   
   for (int i = 0; i < length; i++) {
     if (notes[i] == ' ') {
